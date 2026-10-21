@@ -1,0 +1,17 @@
+{
+  "name": "daily-smash-site",
+  "version": "1.0.0",
+  "description": "Site vitrine et administration pour Daily Smash (Montmerle-sur-Saône)",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build:static": "node scripts/build-static.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^2.0.0",
+    "dotenv": "^16.4.5"
+  }
+}

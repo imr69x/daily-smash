@@ -1,0 +1,365 @@
+{
+  "products": [
+    {
+      "id": "classico-smash",
+      "category": "signature",
+      "name": "Classico Smash",
+      "desc": "Salade, tomate, oignons, fromage, sauce DailySmash.",
+      "note": "",
+      "price": 8.9,
+      "image": "/uploads/5e4e089edc19fe4f6f008b33ba61f321.jpg",
+      "active": true,
+      "order": 1,
+      "core": true
+    },
+    {
+      "id": "smoky-smash",
+      "category": "signature",
+      "name": "Smoky Smash",
+      "desc": "Fromage, bacon, sauce fumée DailySmash.",
+      "note": "",
+      "price": 8.9,
+      "image": "/uploads/18b0a2240c263036863255ee5a87cb46.jpg",
+      "active": true,
+      "order": 2,
+      "core": true
+    },
+    {
+      "id": "sweety-smash",
+      "category": "signature",
+      "name": "Sweety Smash",
+      "desc": "Galette de pomme de terre, fromage, bacon, sweet mayo, sauce DailySmash.",
+      "note": "",
+      "price": 9.9,
+      "image": "/uploads/32bc2f3046bc57080025b34ae58964f7.jpg",
+      "active": true,
+      "order": 3,
+      "core": true
+    },
+    {
+      "id": "smash-kid",
+      "category": "kids",
+      "name": "Smash Kid",
+      "desc": "Smash Burger, ketchup, cornichon — ou Nuggets x5. Avec frites, Capri-Sun et compote.",
+      "note": "",
+      "price": 6.9,
+      "image": "/uploads/5baa840677dd0f4da02f30a30364e86c.jpg",
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "menu-cheese-box",
+      "category": "snacking",
+      "name": "Menu Cheese Box",
+      "desc": "2 Mozza + 2 Camemberts + Frites + Boisson.",
+      "note": "",
+      "price": 7.5,
+      "image": null,
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "menu-snack",
+      "category": "snacking",
+      "name": "Menu Snack",
+      "desc": "6 Nuggets ou 5 Wings + Frites + Boisson.",
+      "note": "",
+      "price": 8.5,
+      "image": null,
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "menu-mix",
+      "category": "snacking",
+      "name": "Menu Mix",
+      "desc": "3 Nuggets + 3 Wings + Frites + Boisson.",
+      "note": "",
+      "price": 9,
+      "image": null,
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "nuggets-6",
+      "category": "snacking",
+      "name": "6 Nuggets",
+      "desc": "",
+      "note": "",
+      "price": 5,
+      "image": null,
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "onion-rings-6",
+      "category": "snacking",
+      "name": "6 Onion Rings",
+      "desc": "",
+      "note": "",
+      "price": 5,
+      "image": null,
+      "active": true,
+      "order": 5
+    },
+    {
+      "id": "camembert-6",
+      "category": "snacking",
+      "name": "6 Bouchées Camembert",
+      "desc": "",
+      "note": "",
+      "price": 5,
+      "image": null,
+      "active": true,
+      "order": 6
+    },
+    {
+      "id": "sticks-mozza-6",
+      "category": "snacking",
+      "name": "6 Sticks Mozza",
+      "desc": "",
+      "note": "",
+      "price": 6,
+      "image": null,
+      "active": true,
+      "order": 7
+    },
+    {
+      "id": "tenders-6",
+      "category": "snacking",
+      "name": "6 Tenders",
+      "desc": "",
+      "note": "",
+      "price": 7,
+      "image": null,
+      "active": true,
+      "order": 8
+    },
+    {
+      "id": "wings-6",
+      "category": "snacking",
+      "name": "6 Wings",
+      "desc": "",
+      "note": "",
+      "price": 7,
+      "image": null,
+      "active": true,
+      "order": 9
+    },
+    {
+      "id": "frites",
+      "category": "frites",
+      "name": "Frites",
+      "desc": "",
+      "note": "",
+      "price": 2.5,
+      "image": null,
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "frites-cheddar",
+      "category": "frites",
+      "name": "Frites Cheddar",
+      "desc": "",
+      "note": "",
+      "price": 3.5,
+      "image": null,
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "frites-cheddar-crispy",
+      "category": "frites",
+      "name": "Frites Cheddar Crispy",
+      "desc": "",
+      "note": "",
+      "price": 4,
+      "image": null,
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "frites-cheddar-bacon",
+      "category": "frites",
+      "name": "Frites Cheddar Bacon",
+      "desc": "",
+      "note": "",
+      "price": 4.5,
+      "image": null,
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "supp-crudites",
+      "category": "supplements",
+      "name": "Crudités",
+      "desc": "",
+      "note": "",
+      "price": 0.5,
+      "image": null,
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "supp-garniture",
+      "category": "supplements",
+      "name": "Fromage ou garniture au choix",
+      "desc": "Cheddar, chèvre, raclette, poivrons, oeuf, chorizo, bacon ou lardons.",
+      "note": "",
+      "price": 1,
+      "image": null,
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "supp-rosti",
+      "category": "supplements",
+      "name": "Rösti",
+      "desc": "",
+      "note": "",
+      "price": 1,
+      "image": null,
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "supp-viande",
+      "category": "supplements",
+      "name": "Viande supplémentaire",
+      "desc": "Steak, poulet ou veggie.",
+      "note": "",
+      "price": 1,
+      "image": null,
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "tiramisu",
+      "category": "desserts",
+      "name": "Tiramisu",
+      "desc": "",
+      "note": "",
+      "price": 3.5,
+      "image": null,
+      "active": true,
+      "order": 1
+    },
+    {
+      "id": "gaufre-sucre",
+      "category": "desserts",
+      "name": "Gaufre Sucre",
+      "desc": "",
+      "note": "",
+      "price": 4,
+      "image": null,
+      "active": true,
+      "order": 2
+    },
+    {
+      "id": "gaufre-confiture",
+      "category": "desserts",
+      "name": "Gaufre Confiture",
+      "desc": "",
+      "note": "",
+      "price": 4.5,
+      "image": null,
+      "active": true,
+      "order": 3
+    },
+    {
+      "id": "moelleux-chocolat",
+      "category": "desserts",
+      "name": "Moelleux Chocolat",
+      "desc": "",
+      "note": "Suppléments : crème anglaise 0,50 €, crème sucrée 0,50 €, glace 1 boule 1,00 €.",
+      "price": 4,
+      "image": null,
+      "active": true,
+      "order": 4
+    },
+    {
+      "id": "gaufre-nutella",
+      "category": "desserts",
+      "name": "Gaufre Nutella",
+      "desc": "",
+      "note": "Suppléments : crème sucrée 0,50 €, glace 1 boule 0,50 €.",
+      "price": 4,
+      "image": null,
+      "active": true,
+      "order": 5
+    }
+  ],
+  "settings": {
+    "banner": {
+      "enabled": false,
+      "text": ""
+    },
+    "cursor": {
+      "enabled": false,
+      "style": "smash",
+      "size": "m"
+    },
+    "info": {
+      "address": "3 rue de Lyon\n01090 Montmerle-sur-Saône",
+      "phone": "09 81 59 88 91"
+    },
+    "socials": [
+      {
+        "id": "ubereats",
+        "platform": "ubereats",
+        "label": "Uber Eats",
+        "url": "https://www.ubereats.com/fr/store/daily-smash/IzT_Zdd3TGqWAeH_F1Kmqg"
+      },
+      {
+        "id": "facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/p/Dailysmash-61578675941587/"
+      }
+    ],
+    "notes": {
+      "signature": "Tous les menus : +3,50 € pour ajouter frites + boisson.\nBurgers servis d'office avec 2 viandes, au choix : steak, poulet ou veggie. Triple : +1 €."
+    },
+    "hours": {
+      "days": [
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "21:30"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "21:30"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "21:30"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "21:30"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "22:00"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "22:00"
+        },
+        {
+          "closed": false,
+          "open": "18:00",
+          "close": "21:30"
+        }
+      ],
+      "note": "Horaires susceptibles de varier exceptionnellement."
+    }
+  }
+}

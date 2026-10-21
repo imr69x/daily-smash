@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Smash — Smash burgers à Montmerle-sur-Saône</title>
+  <meta name="description" content="Daily Smash, snack à Montmerle-sur-Saône : smash burgers, snacking, menu enfant, frites et desserts.">
+  <meta name="theme-color" content="#0d0a09">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#carte">Aller au menu</a>
+  <div id="ticker-slot"></div>
+
+  <header class="top" id="top">
+    <div class="top-inner">
+      <a class="brand" href="#accueil" aria-label="Daily Smash — accueil">
+        <img src="assets/logo.jpg" alt="" width="44" height="44">
+        <span>DAILY SMASH</span>
+      </a>
+      <a class="btn" id="cta-uber-top" href="#infos" hidden>Commander</a>
+    </div>
+    <nav class="catnav" id="catnav" aria-label="Catégories du menu">
+      <div class="catnav-inner" id="catnav-inner"></div>
+    </nav>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow reveal">Montmerle-sur-Saône · Smash burgers</span>
+          <h1 class="reveal">Le burger<br>qu’on <span class="pop">écrase</span><br>pas à moitié</h1>
+          <p class="lede reveal">Smash burgers, snacking, frites et desserts, préparés à la commande.</p>
+          <div class="cta-row reveal" id="hero-cta"></div>
+        </div>
+        <div class="hero-photo reveal" id="hero-photo" role="group" aria-roledescription="carrousel" aria-label="Nos burgers">
+          <div class="slides" id="hero-slides">
+            <img class="slide on" src="assets/hero-burger.jpg" alt="Burger Daily Smash au fromage fondu, servi avec des frites" width="550" height="550" fetchpriority="high">
+          </div>
+          <div class="hero-cap" id="hero-cap" aria-live="polite" hidden><span class="cap-tag" hidden>Du moment</span><span class="cap-name"></span><span class="cap-price"></span></div>
+          <div class="dots" id="hero-dots" hidden></div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#signature" aria-label="Voir les burgers"><span></span></a>
+    </section>
+
+    <div class="fx-zone">
+      <div class="fx" id="fx" aria-hidden="true"></div>
+    <section class="sect wrap moment" id="moment" data-nav="Du moment" hidden>
+      <header class="sect-head reveal">
+        <span class="moment-badge">✦ Édition limitée</span>
+        <span class="eyebrow" id="moment-eyebrow"></span>
+        <h2 id="moment-title"></h2>
+      </header>
+      <div class="grid-feature" data-cat="moment"></div>
+    </section>
+
+    <section class="sect wrap" id="signature" data-nav="Nos burgers">
+      <header class="sect-head reveal">
+        <span class="eyebrow">Les incontournables</span>
+        <h2 id="signature-title">Nos burgers signature</h2>
+      </header>
+      <div class="grid-feature" data-cat="signature"></div>
+      <p class="sect-note reveal" id="signature-note" hidden></p>
+    </section>
+
+
+    <div id="carte"></div>
+
+    <section class="sect wrap" id="snacking" data-nav="Snacking">
+      <header class="sect-head reveal"><span class="eyebrow">À partager</span><h2>Snacking</h2></header>
+      <div class="grid-cards" data-cat="snacking"></div>
+    </section>
+
+    <section class="sect wrap" id="kids" data-nav="Menu enfant">
+      <header class="sect-head reveal"><span class="eyebrow">Pour les petits</span><h2>Menu enfant</h2></header>
+      <div class="grid-cards" data-cat="kids"></div>
+    </section>
+
+    <section class="sect wrap" id="frites" data-nav="Frites">
+      <header class="sect-head reveal"><span class="eyebrow">Accompagnements</span><h2>Frites</h2></header>
+      <div class="list-products" data-cat="frites"></div>
+    </section>
+
+    <section class="sect wrap" id="supplements" data-nav="Suppléments">
+      <header class="sect-head reveal"><span class="eyebrow">Sur mesure</span><h2>Suppléments</h2></header>
+      <div class="list-products" data-cat="supplements"></div>
+    </section>
+
+    <section class="sect wrap" id="desserts" data-nav="Desserts">
+      <header class="sect-head reveal"><span class="eyebrow">Pour finir</span><h2>Desserts</h2></header>
+      <div class="list-products" data-cat="desserts"></div>
+    </section>
+
+    <section class="sect wrap" id="infos" data-nav="Infos">
+      <header class="sect-head reveal"><span class="eyebrow">Infos pratiques</span><h2>Nous trouver, nous suivre</h2></header>
+      <div class="about-grid">
+        <div class="card reveal hours-card">
+          <span class="eyebrow">Horaires<sup class="ast">*</sup></span>
+          <ul class="hours" id="info-hours"><li>—</li></ul>
+          <p class="hours-note" id="hours-note"></p>
+        </div>
+        <div class="card reveal">
+          <span class="eyebrow">Adresse</span>
+          <p class="big" id="info-address">—</p>
+        </div>
+        <div class="card reveal">
+          <span class="eyebrow">Téléphone</span>
+          <p class="big"><a class="phone-link" id="info-phone" href="#">—</a></p>
+        </div>
+        <div class="card reveal wide">
+          <span class="eyebrow">Commander &amp; nous suivre</span>
+          <div class="social" id="social-main"></div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot-inner">
+      <div class="brand"><img src="assets/logo.jpg" alt="" width="40" height="40"><span>DAILY SMASH</span></div>
+      <div class="social small" id="social-foot"></div>
+    </div>
+    <p class="note-foot" id="foot-address"></p>
+  </footer>
+
+  <div id="cursor" aria-hidden="true"></div>
+  <script>window.DS_STATIC = true;</script>
+  <script src="js/app.js"></script>
+</body>
+</html>
