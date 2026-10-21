@@ -106,15 +106,26 @@
           <ul class="hours" id="info-hours"><li>—</li></ul>
           <p class="hours-note" id="hours-note"></p>
         </div>
-        <div class="card reveal">
+        <div class="card reveal addr-card">
           <span class="eyebrow">Adresse</span>
-          <p class="big" id="info-address">—</p>
+          <div class="addr-wrap">
+            <button type="button" class="addr-btn" id="addr-btn" aria-haspopup="true" aria-expanded="false" aria-controls="addr-menu">
+              <span class="big" id="info-address">—</span>
+              <span class="addr-hint">Ouvrir l’itinéraire ↗</span>
+            </button>
+            <div class="addr-menu" id="addr-menu" role="menu" hidden>
+              <a role="menuitem" id="go-apple" target="_blank" rel="noopener noreferrer">Plans (Apple)</a>
+              <a role="menuitem" id="go-google" target="_blank" rel="noopener noreferrer">Google Maps</a>
+              <a role="menuitem" id="go-waze" target="_blank" rel="noopener noreferrer">Waze</a>
+            </div>
+          </div>
+          <div class="map-box"><iframe id="map" title="Carte : emplacement de Daily Smash" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
         </div>
         <div class="card reveal">
           <span class="eyebrow">Téléphone</span>
           <p class="big"><a class="phone-link" id="info-phone" href="#">—</a></p>
         </div>
-        <div class="card reveal wide">
+        <div class="card reveal">
           <span class="eyebrow">Commander &amp; nous suivre</span>
           <div class="social" id="social-main"></div>
         </div>

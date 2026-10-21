@@ -224,6 +224,35 @@
     note.textContent = hours.note ? "* " + hours.note : "";
     note.hidden = !hours.note;
   }
+  // ---------------- adresse : choix de l'application d'itinéraire + carte zoomable ----------------
+  var mapSig = "";
+  function setupMap(address) {
+    var q = String(address || "").replace(/\s*\n\s*/g, ", ").trim();
+    var card = document.querySelector(".addr-card");
+    var btn = document.getElementById("addr-btn");
+    if (!q) { card.classList.add("no-addr"); return; }
+    card.classList.remove("no-addr");
+    if (q === mapSig) return;
+    mapSig = q;
+    var e = encodeURIComponent(q);
+    document.getElementById("go-apple").href = "https://maps.apple.com/?q=" + e;
+    document.getElementById("go-google").href = "https://www.google.com/maps/search/?api=1&query=" + e;
+    document.getElementById("go-waze").href = "https://waze.com/ul?q=" + e + "&navigate=yes";
+    document.getElementById("map").src = "https://maps.google.com/maps?q=" + e + "&z=16&hl=fr&output=embed";
+    var menu = document.getElementById("addr-menu");
+    function close() { menu.hidden = true; btn.setAttribute("aria-expanded", "false"); }
+    btn.onclick = function (ev) {
+      ev.stopPropagation();
+      var open = menu.hidden;
+      menu.hidden = !open;
+      btn.setAttribute("aria-expanded", String(open));
+      if (open) menu.querySelector("a").focus();
+    };
+    document.addEventListener("click", function (ev) { if (!menu.hidden && !menu.contains(ev.target)) close(); });
+    document.addEventListener("keydown", function (ev) { if (ev.key === "Escape" && !menu.hidden) { close(); btn.focus(); } });
+    menu.addEventListener("click", function () { setTimeout(close, 50); });
+  }
+
   document.addEventListener("visibilitychange", function () { if (!document.hidden) renderHours((state.settings || {}).hours); });
 
   function renderInfos() {
@@ -232,6 +261,7 @@
     var socials = s.socials || [];
     renderHours(s.hours);
     document.getElementById("info-address").textContent = info.address || "À confirmer";
+    setupMap(info.address);
     document.getElementById("foot-address").textContent = [String(info.address || "").replace(/\s*\n\s*/g, ", "), info.phone].filter(Boolean).join(" · ");
     var phoneEl = document.getElementById("info-phone");
     var digits = String(info.phone || "").replace(/[^\d+]/g, "");
